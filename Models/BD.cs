@@ -27,10 +27,55 @@ public static class BD{
         return dificultades;
     }
 
-    public static List<Respuesta> ObtenerRespuestas(int dificultad, int categoria) {
-        List<Respuesta> respuestas = new List<Respuesta>();
-        //SEGUIR A PARTIR DE ACA
+    public static List<Pregunta> ObtenerPreguntas(int dificultad, int categoria) {
 
+        List<Pregunta> preguntas  = new List<Pregunta>();
+
+        if (dificultad > -1 && categoria > -1) {
+           
+            string SQL = "SELECT * from Preguntas where IdDificultad = @pDificultad and IdCategoria = @pCategoria ";
+            using(SqlConnection db = new SqlConnection(_connectionString))
+            {
+                preguntas = db.Query<Pregunta>(SQL, new {pDificultad = dificultad, pCategoria = categoria}).ToList();
+            }
+        }
+        else if (dificultad == -1 && categoria == -1) {
+            
+            string SQL = "SELECT * from Preguntas,Categorias";
+            using(SqlConnection db = new SqlConnection(_connectionString))
+            {
+                preguntas = db.Query<Pregunta>(SQL, new {pDificultad = dificultad, pCategoria = categoria}).ToList();
+            }
+        }
+
+        else if (dificultad > -1 && categoria == -1){
+            
+            string SQL = "SELECT * from Categorias, Preguntas where IdDificultad = @pDificultad";
+            using(SqlConnection db = new SqlConnection(_connectionString))
+            {
+                preguntas = db.Query<Pregunta>(SQL, new {pDificultad = dificultad, pCategoria = categoria}).ToList();
+            }
+        }
+        else if (dificultad == -1 && categoria > -1){
+            
+            string SQL = "SELECT * from Preguntas, Categorias where IdCategoria = @pCategoria";
+            using(SqlConnection db = new SqlConnection(_connectionString))
+            {
+                preguntas = db.Query<Pregunta>(SQL, new {pDificultad = dificultad, pCategoria = categoria}).ToList();
+            }
+        }
+        
+        return preguntas;
+    }
+
+    public static List<Respuesta> ObtenerRespuestas(int idPregunta) {
+        List<Respuesta> respuestas = new List<Respuesta>();
+        string SQL= "Select * From Preguntas where idPregunta = @pidPregunta";
+            using(SqlConnection db = new SqlConnection(_connectionString))
+            {
+                respuestas = db.Query<Respuesta>(SQL, new {pidPregunta = idPregunta}).ToList();
+            }
+        return respuestas;
     }
 
 }

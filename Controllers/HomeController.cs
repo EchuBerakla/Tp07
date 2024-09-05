@@ -15,7 +15,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        return View(Index);
     }
 
     public IActionResult Privacy()
@@ -27,5 +27,23 @@ public class HomeController : Controller
     public IActionResult Error()
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+    }
+
+    public IActionResult ConfigurarJuego() {
+
+        ViewBag.categorias = BD.ObtenerCategorias(); // ???
+        ViewBag.dificultades = BD.ObtenerDificultades(); // ???
+        return View(ConfigurarJuego);
+    }
+
+    public IActionResult Ayuda() {
+
+        return RedirectToAction(Jugar); // ????
+    }
+
+    public IActionResult Jugar() {
+
+        ViewBag. PreguntaActual;
+
     }
 }

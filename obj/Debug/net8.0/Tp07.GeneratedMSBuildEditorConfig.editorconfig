@@ -18,12 +18,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = z:\4b\Programacion\Tp07
 build_property._RazorSourceGeneratorDebug = 
 
+[z:/4b/Programacion/Tp07/Views/ConfigurarJuego.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZmlndXJhckp1ZWdvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[z:/4b/Programacion/Tp07/Views/Fin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [z:/4b/Programacion/Tp07/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [z:/4b/Programacion/Tp07/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[z:/4b/Programacion/Tp07/Views/Juego.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSnVlZ28uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[z:/4b/Programacion/Tp07/Views/Respuesta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzcHVlc3RhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [z:/4b/Programacion/Tp07/Views/Shared/Error.cshtml]
