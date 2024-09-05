@@ -12,7 +12,6 @@ public static class Juego
     private static List<Respuesta> ListaRespuestas;
 
     private static void InicializarJuego() {
-
         Username = "";
         PuntajeActual = 0;
         CantidadPreguntasCorrectas = 0;
