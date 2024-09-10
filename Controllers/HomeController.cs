@@ -15,7 +15,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View(Index);
+        return View("Index");
     }
 
     public IActionResult Privacy()
@@ -36,15 +36,29 @@ public class HomeController : Controller
         return View("ConfigurarJuego");
     }
 
+    public IActionResult Comenzar(string username, int dificultad, int categoria) {
+        
+        Juego.CargarPartida();
+        return RedirectToAction("Jugar"); 
+    }
+
     public IActionResult Ayuda() {
 
-        return RedirectToAction("Jugar"); // ????
+        return RedirectToAction("Jugar"); 
     }
 
     public IActionResult Jugar() {
+        
         return View();
-  //      ViewBag. PreguntaActual;
-
+        
     }
+
+    [HttpPost] 
+    public IActionResult VerificarLaRespuesta(int idPregunta, int idRespuesta){
+
+        Juego.VerificarRespuesta = ViewBag.Correcta;
+        return View("Respuesta");
+    }
+
 }
 
