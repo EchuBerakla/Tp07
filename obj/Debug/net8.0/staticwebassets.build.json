@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EEn2kUiNagSkp0HQDtCq427A9ouTRCI0o8lP8oOdKbU=",
+  "Hash": "o9Q87CsjC94HPzDrvjV9vpqwWPXGPEKuPI4m9xVKGlk=",
   "Source": "Tp07",
   "BasePath": "_content/Tp07",
   "Mode": "Default",
@@ -16,44 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "Z:\\4b\\Programacion\\Tp07\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Tp07.styles.css",
-      "SourceId": "Tp07",
-      "SourceType": "Computed",
-      "ContentRoot": "Z:\\4b\\Programacion\\Tp07\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/Tp07",
-      "RelativePath": "Tp07.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "Z:\\4b\\Programacion\\Tp07\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Tp07.styles.css"
-    },
-    {
-      "Identity": "Z:\\4b\\Programacion\\Tp07\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Tp07.bundle.scp.css",
-      "SourceId": "Tp07",
-      "SourceType": "Computed",
-      "ContentRoot": "Z:\\4b\\Programacion\\Tp07\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/Tp07",
-      "RelativePath": "Tp07.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "Z:\\4b\\Programacion\\Tp07\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Tp07.bundle.scp.css"
-    },
     {
       "Identity": "Z:\\4b\\Programacion\\Tp07\\wwwroot\\css\\site.css",
       "SourceId": "Tp07",
@@ -91,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "Z:\\4b\\Programacion\\Tp07\\wwwroot\\img\\logo.png",
+      "SourceId": "Tp07",
+      "SourceType": "Discovered",
+      "ContentRoot": "Z:\\4b\\Programacion\\Tp07\\wwwroot\\",
+      "BasePath": "_content/Tp07",
+      "RelativePath": "img/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\logo.png"
     },
     {
       "Identity": "Z:\\4b\\Programacion\\Tp07\\wwwroot\\js\\site.js",

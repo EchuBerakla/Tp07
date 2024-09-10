@@ -1,8 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Tp07.Models;
+using TP07.Models;
 
-namespace Tp07.Controllers;
+namespace TP07.Controllers;
 
 public class HomeController : Controller
 {
@@ -29,21 +29,22 @@ public class HomeController : Controller
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 
-    public IActionResult ConfigurarJuego() {
+   public IActionResult ConfigurarJuego() {
 
-        ViewBag.categorias = BD.ObtenerCategorias(); // ???
-        ViewBag.dificultades = BD.ObtenerDificultades(); // ???
-        return View(ConfigurarJuego);
+        ViewBag.categorias = Juego.ObtenerCategor(); 
+        ViewBag.dificultades = Juego.ObtenerDificult(); 
+        return View("ConfigurarJuego");
     }
 
     public IActionResult Ayuda() {
 
-        return RedirectToAction(Jugar); // ????
+        return RedirectToAction("Jugar"); // ????
     }
 
     public IActionResult Jugar() {
-
-        ViewBag. PreguntaActual;
+        return View();
+  //      ViewBag. PreguntaActual;
 
     }
 }
+
