@@ -20,3 +20,46 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/* Asegurar que el cuerpo esté centrado */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa; /* Color de fondo claro */
+}
+
+/* Centrar el contenido de la página */
+.container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* Estilo para la imagen del logo */
+.container img {
+  width: 300px;
+  height: auto;
+}
+
+/* Espaciado entre la imagen y el botón */
+.container .btn {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+/* Personalización del botón */
+.btn-primary {
+  background-color: #007bff; /* Azul estándar de Bootstrap */
+  border: none; /* Sin borde */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Azul oscuro al pasar el cursor */
+}

@@ -1,16 +1,16 @@
 {
   "Files": [
     {
-      "Id": "Z:\\4b\\Programacion\\Tp07\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Tp07.bundle.scp.css",
-      "PackagePath": "staticwebassets\\Tp07.bundle.scp.css"
-    },
-    {
       "Id": "Z:\\4b\\Programacion\\Tp07\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "Z:\\4b\\Programacion\\Tp07\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "Z:\\4b\\Programacion\\Tp07\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
     },
     {
       "Id": "Z:\\4b\\Programacion\\Tp07\\wwwroot\\js\\site.js",
