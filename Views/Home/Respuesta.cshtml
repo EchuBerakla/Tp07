@@ -1,0 +1,26 @@
+@{
+    ViewData["Title"] = "Resultado";
+}
+<body>
+    <div class="container">
+        <header>
+            <h1>@ViewData["Title"]</h1>
+        </header>
+
+        <section class="result-message">
+            @if (ViewBag.Correcta)
+            {
+                <div class="correct">
+                    <p>¡Respuesta Correcta!</p>
+                </div>
+            }
+            else
+            {
+                <div class="incorrect">
+                    <p>Respuesta Incorrecta</p>
+                </div>
+            }
+            <a href="/Controller/Jugar" class="next-question-button"> Siguiente Pregunta</a>
+        </section>
+    </div>
+</body>

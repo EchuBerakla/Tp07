@@ -75,4 +75,14 @@ public static class Juego
         return Correcta;
     }
 
+    public static int ObtenerPuntaje()
+    {
+        return PuntajeActual;
+    }
+
+    public static string ObtenerNombre()
+    {
+        return Username;
+    }
+
 }
