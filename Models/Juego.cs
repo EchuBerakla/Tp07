@@ -36,13 +36,17 @@ public static class Juego
     }
     public static void CargarPartida(string username, int dificultad, int categoria) {
         
-        Username = username;
         InicializarJuego();
+        Username = username;
         ListaPreguntas = BD.ObtenerPreguntas(dificultad, categoria);      
     }
 
     public static Pregunta ObtenerProximaPregunta ()
     {
+        if(ContadorNroPreguntaActual >= ListaPreguntas.Count())
+        {
+            return null;
+        }
         return ListaPreguntas[ContadorNroPreguntaActual];
     }
 
@@ -83,6 +87,11 @@ public static class Juego
     public static string ObtenerNombre()
     {
         return Username;
+    }
+
+    public static int ObtenerProgreso()
+    {
+        return ContadorNroPreguntaActual;
     }
 
 }

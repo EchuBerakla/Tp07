@@ -1,0 +1,27 @@
+<!-- - Nombre de usuario y puntaje actual
+     - Número de pregunta actual y enunciado (Si hay foto la muestra)
+     - Un formulario (POST) con 4 botones para elegir la respuesta correcta (Si las respuestas tienen fotos, las muestra también como parte de la opción).
+     - Un botón para responder y enviar el formulario (llama al método VerificarRespuesta del controller). -->
+
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<h3>Bienvenido, @ViewBag.Usuario !!!</h3>
+<h4>Puntaje Actual: @ViewBag.Puntaje</h4>
+<h4>Pregunta Actual: @ViewBag.NumeroPregunta</h4>
+
+<h2>@ViewBag.Pregunta.Enunciado</h2>
+@if(ViewBag.Pregunta.Foto != null)
+{
+    <img src="@ViewBag.Pregunta.Foto">
+}
+
+        @foreach(Respuesta resp in ViewBag.ListaRespuestas)
+   {
+    <form action='@Url.ActionLink("VerificarLaRespuesta", "Home")' method="POST">
+        <input type="hidden" name="idRespuesta" id="idRespuesta" value= "@resp.idRespuesta">
+        <input type="hidden" name="idPregunta" id="idPregunta" value= "@resp.idPregunta">
+        <input type="submit" value="@resp.Contenido">
+    </form>
+   }

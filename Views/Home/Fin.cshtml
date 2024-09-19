@@ -6,7 +6,7 @@
         <section class="fin">
             <p><strong>Nombre de usuario:</strong> @ViewBag.Username</p>
             <p><strong>Puntaje final:</strong> @ViewBag.Puntaje</p>       
-            <a href="/Controller/ConfigurarJuego" class="boton">Volver a Jugar</a>
+            <a href='@Url.ActionLink("ConfigurarJuego", "Home")' class="boton">Volver a Jugar</a>
         </section>
     </div>
 </body>

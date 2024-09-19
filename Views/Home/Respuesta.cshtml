@@ -20,7 +20,9 @@
                     <p>Respuesta Incorrecta</p>
                 </div>
             }
-            <a href="/Controller/Jugar" class="next-question-button"> Siguiente Pregunta</a>
+            <form action='@Url.ActionLink("Jugar", "Home")' method="get">
+                <input type="Submit" value="Jugar" />
+            </form>
         </section>
     </div>
 </body>

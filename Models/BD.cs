@@ -70,7 +70,7 @@ public static class BD{
 
     public static List<Respuesta> ObtenerRespuestas(int idPregunta) {
         List<Respuesta> respuestas = new List<Respuesta>();
-        string SQL= "Select * From Preguntas where idPregunta = @pidPregunta";
+        string SQL= "Select * From Respuestas where idPregunta = @pidPregunta";
             using(SqlConnection db = new SqlConnection(_connectionString))
             {
                 respuestas = db.Query<Respuesta>(SQL, new {pidPregunta = idPregunta}).ToList();

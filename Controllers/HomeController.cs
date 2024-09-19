@@ -48,8 +48,18 @@ public class HomeController : Controller
     }
 
     public IActionResult Jugar() {
+    
+        ViewBag.Puntaje = Juego.ObtenerPuntaje();
+        ViewBag.Usuario = Juego.ObtenerNombre();
+        ViewBag.Pregunta = Juego.ObtenerProximaPregunta();
+        ViewBag.NumeroPregunta = Juego.ObtenerProgreso();
+        if(ViewBag.Pregunta == null)
+        {
+            return View("Fin");
+        }
+        ViewBag.ListaRespuestas = Juego.ObtenerProximasRespuestas(ViewBag.Pregunta.idPregunta);
+
         
-        //CARGAR VIEW BAGS DE: 
         
         return View("Juego");
     }

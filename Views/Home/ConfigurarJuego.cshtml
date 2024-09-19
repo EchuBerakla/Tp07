@@ -4,7 +4,7 @@
 <body>
     <div class="container form">
         <h1>@ViewData["Title"]</h1>
-        <form action="/Controller/Comenzar" method="get">
+        <form action='@Url.ActionLink("Comenzar", "Home")' method="get">
             <div class="form-group">
                 <label for="dificultad">Dificultad:</label>
                 <select id="dificultad" name="dificultad" required>
@@ -31,9 +31,7 @@
             </div>
 
                 <div>
-        <a href='@Url.Action("Juego", "Home")' class="boton" role="button">
-             Jugar
-        </a>
+        <input type="Submit" value="Jugar" />
     </div>
         </form>
     </div>

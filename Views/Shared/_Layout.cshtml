@@ -14,10 +14,7 @@
         <img src="~/img/logo.png" alt="Logo" class="logo" /> 
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link" href="@Url.Action("Juego", "Home")">Jugar</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="@Url.Action("Creditos", "Home")">Creditos</a>
+                <a class="nav-link" href='@Url.Action("ConfigurarJuego", "Home")'>Jugar</a>
             </li>
         </ul>
     </div>
@@ -29,11 +26,7 @@
         </main>
     </div>
 
-    <footer class="footer">
-        <div class="container">
-            &copy; 2024 - Tp07 
-        </div>
-    </footer>
+  
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
